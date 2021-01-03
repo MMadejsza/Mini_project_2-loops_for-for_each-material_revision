@@ -19,16 +19,17 @@ btnSecond.style.fontSize2 = "20px";
 btnSecond.addEventListener("click", addList);
 
 function addList() {
-    let liArray2 = document.querySelectorAll("ul li");
+    console.log('click');
     for (let i = 1; i <= 5; i++) {
         const li = createTag("li", "class", "liItem");
-        li.innerText = `Element${i}`;
         const uList = document.querySelector(".list");
         uList.appendChild(li);
         li.style.fontSize = `${fnSize2++}px`;
     }
-    liArray2.forEach(element => {
+    let liArray2 = document.querySelectorAll("ul li");
+    liArray2.forEach((element, index) => {
         element.style.display = "block";
+        element.innerText = `Element${index + 1}`;
     });
 
 }
