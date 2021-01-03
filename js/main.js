@@ -4,10 +4,6 @@ btn.addEventListener("click", btnAction);
 
 let fnSize = 10;
 let liArray = document.querySelectorAll("li");
-liArray.forEach(element => {
-    element.style.fontSize = `${fnSize}px`;
-});
-
 
 function btnAction() {
     liArray.forEach(element => {
