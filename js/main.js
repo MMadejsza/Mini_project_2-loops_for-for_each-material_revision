@@ -2,18 +2,17 @@ let btn = document.querySelector("button");
 btn.style.fontSize = "20px";
 btn.addEventListener("click", btnAction);
 
-let fnSize = "10px";
+let fnSize = 10;
 let liArray = document.querySelectorAll("li");
 liArray.forEach(element => {
-    element.style.fontSize = fnSize;
+    element.style.fontSize = `${fnSize}px`;
 });
 
 
 function btnAction() {
-    console.log('clicked');
-
     liArray.forEach(element => {
         element.style.display = "block";
-        element.style.fontSize += 1;
+        element.style.fontSize = `${fnSize}px`;
     });
+    fnSize += 1;
 }
