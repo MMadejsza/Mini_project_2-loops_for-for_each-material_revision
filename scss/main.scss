@@ -1,1 +1,17 @@
-@import "./scss/console.scss";
+@import "./console.scss";
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: none;
+}
+
+body {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
